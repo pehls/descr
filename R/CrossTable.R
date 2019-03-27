@@ -193,7 +193,7 @@ Abbrev1 <- function(x, lmt)
 
     # Last lower case ascii letter (unless it is the first letter in a word)
     i <- len1
-    while(i > 0){
+    while(i > 1){
         if(xc[i-1] != 0x20 && xc[i] > 0x60 && xc[i] < 0x7b){
             xc <- xc[-i]
             return(rawToChar(xc))
